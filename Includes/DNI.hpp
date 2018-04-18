@@ -13,15 +13,13 @@ class DNI
 private:
 
     long numDNI;
-    long num = rand() % 6000;//modi
     char let;
     int contador;
 
 public:
 
     DNI() {
-        //numDNI = 30000000 + (rand() % 50000000);
-        numDNI = 30000000 + (rand() % 50000000) + num;
+        numDNI = 30000000 + (rand() % 50000000);
         let ="TRWAGMYFPDXBNJZSQVHLCKE"[numDNI % 23];
         contador =  0;
     }
@@ -73,7 +71,6 @@ public:
 
 ostream& operator<<(ostream& os, const DNI& d)
 {
-    //os << d.numDNI << d.let;
-    os << d.numDNI << d.let << " " << d.num;
+    os << d.numDNI << d.let;
     return os;
 };

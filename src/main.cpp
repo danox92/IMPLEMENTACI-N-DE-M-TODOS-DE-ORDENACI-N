@@ -4,13 +4,13 @@
 #include <iomanip>
 #include <vector>
 
-#include "Quicksort.hpp"
-#include "Heapsort.hpp"
-#include "Shellsort.hpp"
-#include "Bubblesort.hpp"
-#include "Insertionsort.hpp"
+#include "../Includes/Quicksort.hpp"
+#include "../Includes/Heapsort.hpp"
+#include "../Includes/Shellsort.hpp"
+#include "../Includes/Bubblesort.hpp"
+#include "../Includes/Insertionsort.hpp"
 
-#include "DNI.hpp"
+#include "../Includes/DNI.hpp"
 
 using namespace std;
 
@@ -64,18 +64,28 @@ int main(){
                       {
                          case 1:
                             I.insertionSort_Debug(v, v.size());
+                            for(int i = 0;i < v.size();i++)
+                                cout << v[i] << endl;
                             break;
                          case 2:
                             B.bubbleSort_Debug(v, v.size());
+                            for(int i = 0;i < v.size();i++)
+                                cout << v[i] << endl;
                             break;
                          case 3:
                             H.heapSort_Debug(v,v.size());
+                            for(int i = 0;i < v.size();i++)
+                                cout << v[i] << endl;
                             break;
                          case 4:
                             Q.quicksort_Debug(v,0,v.size()-1);
+                            for(int i = 0;i < v.size();i++)
+                                cout << v[i] << endl;
                             break;
                          case 5:
                             S.shellSort_Debug(v, v.size());
+                            for(int i = 0;i < v.size();i++)
+                                cout << v[i] << endl;
                             break;
                          case 6:
                              cout << "Hasta Luego!!" << endl;
