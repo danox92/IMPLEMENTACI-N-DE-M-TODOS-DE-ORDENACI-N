@@ -4,13 +4,13 @@
 #include <iomanip>
 #include <vector>
 
-#include "../Includes/Quicksort.hpp"
-#include "../Includes/Heapsort.hpp"
-#include "../Includes/Shellsort.hpp"
-#include "../Includes/Bubblesort.hpp"
-#include "../Includes/Insertionsort.hpp"
+#include "../include/Quicksort.hpp"
+#include "../include/Heapsort.hpp"
+#include "../include/Shellsort.hpp"
+#include "../include/Bubblesort.hpp"
+#include "../include/Insertionsort.hpp"
 
-#include "../Includes/DNI.hpp"
+#include "../include/DNI.hpp"
 
 using namespace std;
 
